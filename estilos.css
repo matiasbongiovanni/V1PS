@@ -83,6 +83,7 @@ html {
     height: 50px;
     border-radius: 15px;
     background-color: #d99a10;
+    cursor: pointer;
 }
 
 .Home button, a {
