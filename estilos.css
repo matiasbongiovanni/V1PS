@@ -15,21 +15,20 @@ html {
     width: 100%;
     display: flex;
     background-color: #141414;
+    justify-content: center;
 }
 
 .Navbar ul li{
     font-weight: 500;
-    padding: 20px;
+    padding: 25px;
     flex-direction: column;
 }
 
 .Navbar a {
     justify-content: center;
-    margin-left: 200px;
     text-align: center;
-    gap: 50px;
-    color: #fff;
     text-decoration: none;
+    color: #fff;
 }
 
 .Navbar a:hover {
@@ -40,6 +39,7 @@ html {
     height: 50px;
     width: 50px;
     padding-top: 10px;
+    filter: drop-shadow(0 0 0.4rem #000);
 }
 
 .Home {
@@ -53,14 +53,26 @@ html {
 .Home h1 {
     padding-top: 100px;
     font-size: 60px;
+    padding-bottom: 10px;
+    font-weight: 800;
     text-align: center;
     color: #fff;
+}
+
+.Home h1::selection {
+    color: #fff;
+    background: #d99a10;
 }
 
 .Home p {
     padding-bottom: 30px;
     text-align: center;
     color: #fff;
+}
+
+.Home p::selection {
+    color: #fff;
+    background: #d99a10;
 }
 
 .Home button {
@@ -101,11 +113,21 @@ html {
     align-items: center;
 }
 
+.Partners h2 {
+    font-weight: 800;
+}
+
+.Partners h2::selection {
+    color: #d99a10;
+    background: #fff;
+}
+
 .Partners img {
     height: 150px;
     border-radius: 30px;
     object-fit: cover;
     object-position: center;
+    filter: drop-shadow(0 0 0.4rem #000);
 }
 
 .Art {
@@ -115,16 +137,22 @@ html {
 }
 
 .Art h2 {
+    font-weight: 800;
     padding-top: 50px;
     text-align: center;
     color: #d99a10;
+}
+
+.Art h2::selection {
+    color: #d99a10;
+    background: #fff;
 }
 
 .Art img {
     height: 120px;
     padding: 20px;
 }
-/*
+
 .Team {
     height: 400px;
     width: 100%;
@@ -132,16 +160,51 @@ html {
 }
 
 .Team h2 {
+    font-weight: 800;
     text-align: center;
     padding-top: 30px;
 }
 
-.Team-container img {
-    height: 120px;
-    padding: 20px;
+.Team h2::selection {
+    color: #d99a10;
+    background: #fff;
 }
 
-*/
+.Team-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+}
+
+.Team-container img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 0.5rem #000);
+}
+
+.Team-container p {
+    font-weight: 500;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.float{
+	position:fixed;
+	width: 30px;
+	height: 30px;
+	bottom: 15px;
+	right: 15px;
+	background-image: url(/img/Logo.webp);
+    background-size:cover;
+    object-fit: cover;
+	border-radius:50px;
+}
+
+.my-float{
+	margin-top:22px;
+}
 
 footer {
     height: 100px;
@@ -150,8 +213,13 @@ footer {
 }
 
 footer p {
+    padding-top: 25px;
     text-align: center;
     color: #fff;
+}
+
+footer p::selection {
+    color: #d99a10;
 }
 
 .Socials {
