@@ -45,7 +45,7 @@ html {
 .Home {
     height: 600px;
     width: 100%;
-    background-image: url("/img/Background.webp");
+    background-image: url("/V1PS/img/Background.webp");
     background-position: center;
     background-size: cover;
 }
