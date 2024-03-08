@@ -87,6 +87,7 @@ html {
 }
 
 .Home button, a {
+    margin: auto;
     text-align: center;
     text-decoration: none;
     color: #fff;
@@ -230,8 +231,17 @@ footer p::selection {
     gap: 15px;    
 }
 
+.Socials i {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #333;
+    color: #666;
+}
+
 .Socials i:hover {
     color: #d99a10;
+    box-shadow: 0 0 15px #d99a10;
+    transition: 0.75s;
 }
 
 .NavbarMobile {
@@ -249,6 +259,8 @@ footer p::selection {
 .TeamMobile {
     display: none;
 }
+
+
 
 @media screen and (max-width: 768px) {
     .Navbar {
@@ -313,7 +325,7 @@ footer p::selection {
     }
 
     .slideshow-container {
-        max-width: 1000px;
+        max-width: 300px;
         position: relative;
         margin: auto;
       }
@@ -347,8 +359,11 @@ footer p::selection {
 
       .mySlides img {
         display: flex;
-        height: 400px;
-        width: 100px;
+        margin: auto;
+        height: 90%;
+        width: 90%;
+        border-radius: 10%;
+        filter: drop-shadow(0 0 0.5rem #000);
       }
 
       .Team {
@@ -383,11 +398,3 @@ footer p::selection {
             text-align: center;
         }
 }
-
-
-/*
-<ul><li><a href="#">Home</a></li></ul>
-    <ul><li><a href="#Partners">Partners</a></li></ul>
-    <ul><li><a href="#Art">Art Gallery</a></li></ul>
-    <ul><li><a href="#Team">Team</a></li></ul>
-*/
